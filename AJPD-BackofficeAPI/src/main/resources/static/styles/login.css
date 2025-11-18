@@ -1,0 +1,89 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-background);
+  padding: 2rem 1rem;
+  min-height: 100vh;
+}
+
+.login .container {
+  animation: fadeIn var(--transition-normal) ease forwards;
+  box-shadow: var(--shadow-lg);
+  border-radius: var(--border-radius-lg);
+  background: white;
+  padding: 2.5rem 3rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login h2 {
+  margin-bottom: 1.5rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.form-control {
+  transition: border-color var(--transition-fast);
+  outline-offset: 2px;
+  border: 1.8px solid var(--color-blue-light);
+  border-radius: var(--border-radius-md);
+  padding: 0.75rem 1rem;
+  color: var(--color-primary);
+  font-size: 1rem;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 8px var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+.btn-primary {
+  transition: background-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  border: none;
+  border-radius: var(--border-radius-md);
+  background-color: var(--color-secondary);
+  padding: 0.75rem 1.2rem;
+  width: 100%;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  outline: none;
+  box-shadow: var(--shadow-md);
+  background-color: var(--color-accent);
+}
+
+@media (max-width: 480px) {
+  .login .container {
+    border-radius: var(--border-radius-md);
+    padding: 2rem 1.5rem;
+  }
+
+  .login h2 {
+    font-size: 1.5rem;
+  }
+}
